@@ -55,6 +55,37 @@ class DataIngestionConfig:
 
 
 @dataclass
+class DataValidationConfig:
+    """
+    Configuration for data validation
+    """
+    def __init__(self,
+                 schema_file_path: str = None,
+                 report_file_path: str = None,
+                 drift_report_file_path: str = None):
+
+        # Set default paths if not provided
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        artifact_dir = os.path.join("artifacts", timestamp)
+
+        # Schema file path
+        self.schema_file_path = schema_file_path or os.path.join(
+            "config", "schema.yaml"
+        )
+
+        # Report directory and file paths
+        report_dir = os.path.join(artifact_dir, "data_validation")
+
+        self.report_file_path = report_file_path or os.path.join(
+            report_dir, "report.json"
+        )
+
+        self.drift_report_file_path = drift_report_file_path or os.path.join(
+            report_dir, "drift_report.json"
+        )
+
+
+@dataclass
 class DataTransformationConfig:
     """
     Configuration for data transformation
@@ -94,3 +125,37 @@ class DataTransformationConfig:
 
         # Columns to drop
         self.columns_to_drop = ["StudyID"]
+
+
+@dataclass
+class DataProfilingConfig:
+    """
+    Configuration for data profiling
+    """
+    def __init__(self,
+                 profile_report_dir: str = None,
+                 train_profile_report_file_path: str = None,
+                 test_profile_report_file_path: str = None,
+                 full_profile_report_file_path: str = None):
+
+        # Set default paths if not provided
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        artifact_dir = os.path.join("artifacts", timestamp)
+
+        # Profile report directory
+        self.profile_report_dir = profile_report_dir or os.path.join(
+            artifact_dir, "data_profiling"
+        )
+
+        # Profile report file paths
+        self.train_profile_report_file_path = train_profile_report_file_path or os.path.join(
+            self.profile_report_dir, "train_profile_report.html"
+        )
+
+        self.test_profile_report_file_path = test_profile_report_file_path or os.path.join(
+            self.profile_report_dir, "test_profile_report.html"
+        )
+
+        self.full_profile_report_file_path = full_profile_report_file_path or os.path.join(
+            self.profile_report_dir, "full_profile_report.html"
+        )

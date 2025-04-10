@@ -27,3 +27,13 @@ class DataTransformationArtifact:
     transformed_train_file_path: str
     transformed_test_file_path: str
     preprocessed_object_file_path: str
+
+
+@dataclass
+class DataProfilingArtifact:
+    """
+    Artifact produced by data profiling component
+    """
+    train_profile_report_file_path: str
+    test_profile_report_file_path: str
+    full_profile_report_file_path: str
