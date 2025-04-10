@@ -23,6 +23,8 @@ class DataTransformationConfig:
         self.transformed_train_array_file_path: str = os.path.join(self.data_transformation_dir, "transformed", "train", "transformed_train.npz")
         self.transformed_test_array_file_path: str = os.path.join(self.data_transformation_dir, "transformed", "test", "transformed_test.npz")
         self.analysis_dir: str = os.path.join(self.data_transformation_dir, "transformed", "train", "analysis")
+        self.columns_to_drop: list = ["StudyID"]
+        self.target_column: str = "HF"
 
 @dataclass
 class ModelTrainerConfig:

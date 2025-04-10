@@ -82,6 +82,16 @@ class DataTransformation:
             logger.info(f"Training dataframe shape after dropping columns: {train_df.shape}")
             logger.info(f"Testing dataframe shape after dropping columns: {test_df.shape}")
 
+            # Verify target column exists
+            target_column = self.data_transformation_config.target_column
+            logger.info(f"Target column: {target_column}")
+
+            if target_column not in train_df.columns or target_column not in test_df.columns:
+                raise ValueError(f"Target column '{target_column}' not found in the dataset!")
+
+            logger.info(f"Target column values in training data: {train_df[target_column].value_counts().to_dict()}")
+            logger.info(f"Target column values in testing data: {test_df[target_column].value_counts().to_dict()}")
+
             # Save the transformed data
             logger.info("Saving transformed data")
             train_df.to_csv(self.data_transformation_config.transformed_train_file_path, index=False)

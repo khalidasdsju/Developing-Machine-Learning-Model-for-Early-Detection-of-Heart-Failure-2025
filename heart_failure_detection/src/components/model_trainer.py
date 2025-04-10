@@ -44,6 +44,20 @@ class ModelTrainer:
             X_train, y_train = train_array[:, :-1], train_array[:, -1]
             X_test, y_test = test_array[:, :-1], test_array[:, -1]
 
+            # Log information about the target variable
+            logging.info(f"Target variable (HF) shape - Train: {y_train.shape}, Test: {y_test.shape}")
+
+            # Check unique values in target
+            unique_train = np.unique(y_train)
+            unique_test = np.unique(y_test)
+            logging.info(f"Unique values in target - Train: {unique_train}, Test: {unique_test}")
+
+            # Count occurrences of each class
+            train_counts = {val: np.sum(y_train == val) for val in unique_train}
+            test_counts = {val: np.sum(y_test == val) for val in unique_test}
+            logging.info(f"Class distribution in train set: {train_counts}")
+            logging.info(f"Class distribution in test set: {test_counts}")
+
             # Define models
             models = {
                 # 🔹 Logistic Regression: Strong regularization for better generalization
