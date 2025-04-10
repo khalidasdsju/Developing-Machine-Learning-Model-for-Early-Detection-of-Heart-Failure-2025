@@ -1,0 +1,81 @@
+StudyID,Age,Sex,BMI,NYHA,HR,HTN,DM,Smoker,DL,RBS,Creatinine,TropI,CXR,ECG,LVIDd,FS,LVIDs,LVEF,RWMA,LAV,MI,ACS,Wall,Thrombolysis,ICT,IRT,MR,EA,DT,RR,Chest_pain,TC,LDLc,TG,BNP,HF
+MPI251,56.0,Male,20.72,II,72.0,No,No,Yes,Yes,5.1,0.87,0.0,Normal,AMI,49.0,25.0,35.0,50.0,Yes,31.0,Yes,STEMI,Inferior,PPCI,80.0,127.0,Moderate,0.61,120.0,24.0,Present,238.0,178.0,152.0,12.0,HF
+MPI027,55.0,Female,22.31,III,86.0,Yes,No,No,No,5.6,1.1,0.07,Normal,T_inversion,52.0,32.0,35.0,60.0,No,37.0,No,UA,No,,83.0,88.0,Mild,0.89,125.0,26.0,Present,130.0,105.0,100.0,17.0,No HF
+MPI100,55.0,Female,28.89,I,75.0,Yes,Yes,No,Yes,7.5,1.0,0.003,Normal,Normal,40.0,35.0,26.0,65.0,No,43.0,No,UA,No,,115.0,120.0,Nil,0.81,225.0,18.0,Absent,159.0,150.0,310.0,15.0,No HF
+MPI238,48.0,Male,25.31,III,86.0,Yes,Yes,No,Yes,6.9,1.2,30.1,Normal,Others,48.0,22.0,28.0,45.0,Yes,47.0,Yes,NSTEMI,Subendocardial,,101.0,111.0,Nil,1.15,101.0,26.0,Present,200.0,63.0,330.0,342.0,HF
+MPI431,42.0,Male,25.28,II,51.0,Yes,Yes,Yes,Yes,7.0,2.38,50.0,Cardiomegaly,AMI,53.0,14.0,45.0,30.0,Yes,24.0,Yes,STEMI,Anterior,Pharmacoinvasive,96.0,96.0,Nil,0.54,145.0,31.0,Present,150.0,90.0,161.0,159.0,HF
+MPI435,59.0,Male,31.22,IV,67.0,Yes,No,No,Yes,5.2,1.8,7.0,Cardiomegaly,Others,78.0,9.0,71.0,20.0,Yes,38.0,Yes,STEMI,Anterior,STK/TNK,67.0,81.0,Mild,1.67,152.0,26.0,Present,155.0,57.0,285.0,35.0,HF
+MPI337,64.0,Male,24.46,I,68.0,Yes,No,No,No,5.8,1.02,20.1,Cardiomegaly,Others,67.0,15.0,57.0,30.0,No,51.0,Yes,NSTEMI,Subendocardial,,83.0,88.0,Mild,0.74,90.0,25.0,Absent,140.0,65.0,100.0,15.0,HF
+MPI367,66.0,Male,26.17,II,78.0,No,Yes,No,Yes,7.0,1.59,4.38,Cardiomegaly,AMI,69.0,14.0,60.0,30.0,Yes,38.0,Yes,STEMI,Anterior,Pharmacoinvasive,133.0,133.0,Mild,0.7,105.0,23.0,Present,143.0,104.0,97.0,14.0,HF
+MPI457,67.0,Male,22.6,III,69.0,Yes,Yes,No,Yes,10.1,1.78,126.0,Normal,Others,49.0,19.0,39.0,40.0,Yes,27.0,Yes,NSTEMI,Subendocardial,,89.0,81.0,Mild,1.2,342.0,14.0,Present,204.0,143.0,159.0,68.0,HF
+MPI342,55.0,Male,23.38,II,78.0,Yes,No,Yes,Yes,5.3,1.12,3.9,Normal,Others,44.0,25.0,33.0,50.0,No,35.0,No,UA,No,,96.0,96.0,Mild,0.62,173.0,26.0,Present,120.0,95.0,95.0,25.0,No HF
+MPI344,56.0,Male,22.89,II,78.0,Yes,No,No,No,7.1,1.2,0.002,Normal,ST_Depression,42.0,32.0,29.0,61.0,No,39.0,No,UA,No,,106.0,134.0,Mild,0.78,190.0,22.0,Present,130.0,90.0,110.0,12.0,No HF
+MPI160,60.0,Male,21.45,I,94.0,No,Yes,No,Yes,10.0,1.14,10.5,Normal,Others,44.0,34.0,27.0,30.0,Yes,24.0,Yes,NSTEMI,Subendocardial,,108.0,108.0,Moderate,0.89,148.0,21.0,Absent,187.0,135.0,115.0,37.0,No HF
+MPI050,55.0,Male,29.38,I,113.0,Yes,No,No,Yes,5.8,0.91,0.003,Normal,Normal,46.0,38.0,28.0,69.0,No,30.0,No,UA,No,,60.0,60.0,Mild,1.09,168.0,21.0,Absent,160.0,90.0,145.0,12.0,No HF
+MPI200,47.0,Male,24.54,I,120.0,Yes,Yes,No,Yes,9.1,0.8,16.5,Cardiomegaly,T_inversion,58.0,17.0,48.0,35.0,Yes,36.0,Yes,NSTEMI,Subendocardial,,104.0,114.0,Mild,1.29,160.0,20.0,Absent,168.0,115.0,153.0,865.0,HF
+MPI137,62.0,Male,26.9,IV,66.0,No,No,Yes,No,6.5,1.5,3.95,Normal,Others,53.0,20.0,43.0,41.0,Yes,47.0,Yes,NSTEMI,Subendocardial,,114.0,120.0,Mild,1.04,103.0,19.0,Present,155.0,69.0,174.0,13.0,HF
+MPI029,50.0,Female,19.56,I,94.0,No,No,No,No,5.9,1.21,0.001,Normal,T_inversion,46.0,32.0,31.0,61.0,No,34.0,No,UA,No,,101.0,106.0,Nil,0.52,89.0,20.0,Absent,115.0,105.0,115.0,21.0,No HF
+MPI113,56.0,Male,25.39,II,110.0,Yes,No,Yes,No,5.2,1.1,2.1,Normal,T_inversion,46.0,20.0,37.0,41.0,Yes,24.0,Yes,NSTEMI,Subendocardial,,87.0,103.0,Mild,0.91,168.0,19.0,Present,252.0,175.0,145.0,14.0,HF
+MPI017,44.0,Male,29.76,I,88.0,No,Yes,Yes,Yes,11.1,1.41,0.003,Normal,Normal,47.0,40.0,28.0,65.0,No,30.0,No,UA,No,,60.0,88.0,Mild,1.34,139.0,16.0,Absent,120.0,65.0,95.0,15.0,No HF
+MPI267,36.0,Male,22.39,II,70.0,No,No,Yes,Yes,6.3,1.24,85.81,Normal,AMI,47.0,30.0,32.0,40.0,Yes,34.0,Yes,STEMI,Anterior,PPCI,89.0,91.0,Mild,0.91,193.0,21.0,Present,279.0,186.0,277.0,15.0,No HF
+MPI244,65.0,Male,17.58,IV,84.0,Yes,No,No,No,5.8,1.0,8.1,Cardiomegaly,ST_Depression,68.0,15.0,58.0,30.0,Yes,43.0,Yes,NSTEMI,Subendocardial,,101.0,134.0,Nil,0.48,80.0,25.0,Present,175.0,122.0,93.0,25.0,HF
+MPI115,65.0,Male,20.31,II,119.0,Yes,No,No,Yes,5.4,3.3,26.6,Normal,T_inversion,46.0,24.0,35.0,49.0,Yes,28.0,Yes,NSTEMI,Subendocardial,,96.0,113.0,Mild,1.11,136.0,26.0,Present,210.0,133.0,125.0,20.0,HF
+MPI222,68.0,Male,23.53,III,86.0,Yes,No,No,No,9.9,1.1,9.5,Normal,Others,52.0,22.0,40.0,45.0,Yes,49.0,Yes,NSTEMI,Subendocardial,,78.0,87.0,Mild,0.83,171.0,24.0,Present,202.0,136.0,377.0,315.0,HF
+MPI409,60.0,Male,25.24,II,65.0,Yes,Yes,No,Yes,6.5,1.23,3.5,Cardiomegaly,T_inversion,51.0,23.0,39.0,45.0,Yes,30.0,Yes,NSTEMI,Subendocardial,,104.0,96.0,Mild,0.64,195.0,16.0,Present,181.0,116.0,255.0,14.0,No HF
+MPI082,58.0,Male,35.06,I,90.0,Yes,Yes,No,Yes,14.5,1.79,10.5,Cardiomegaly,Others,58.0,21.0,46.0,42.0,Yes,46.0,Yes,STEMI,Antero-Septal,PPCI,118.0,111.0,Mild,0.63,105.0,16.0,Absent,150.0,90.0,120.0,25.0,HF
+MPI107,60.0,Female,24.97,I,74.0,No,No,No,No,5.1,0.98,0.001,Normal,Normal,49.0,32.0,33.0,61.0,No,48.0,No,UA,No,,83.0,92.0,Mild,0.83,198.0,18.0,Absent,150.0,90.0,100.0,12.0,No HF
+MPI424,49.0,Male,29.76,II,72.0,Yes,No,No,No,4.1,0.8,3.65,Normal,Normal,53.0,23.0,41.0,45.0,Yes,12.0,Yes,NSTEMI,Subendocardial,,126.0,104.0,Mild,0.69,174.0,21.0,Present,363.0,212.0,115.0,20.0,No HF
+MPI223,48.0,Male,23.66,I,88.0,Yes,Yes,No,Yes,5.2,0.8,30.2,Normal,Normal,48.0,27.0,28.0,40.0,Yes,45.0,Yes,NSTEMI,Subendocardial,,88.0,98.0,Mild,0.93,176.0,17.0,Absent,200.0,53.0,1032.0,419.0,No HF
+MPI197,86.0,Male,22.04,IV,128.0,Yes,Yes,No,Yes,8.0,0.9,10.5,Cardiomegaly,Others,66.0,15.0,56.0,30.0,Yes,30.0,Yes,NSTEMI,Subendocardial,,83.0,93.0,Nil,0.99,148.0,19.0,Present,133.0,73.0,45.0,612.0,HF
+MPI135,60.0,Female,24.91,II,100.0,Yes,Yes,No,Yes,11.6,1.5,11.58,Cardiomegaly,ST_Depression,58.0,29.0,41.0,52.0,Yes,43.0,Yes,NSTEMI,Subendocardial,,94.0,106.0,Mild,0.84,116.0,17.0,Present,190.0,113.0,168.0,12.0,HF
+MPI084,62.0,Male,24.09,I,72.0,No,No,No,No,5.8,1.12,7.5,Normal,Normal,48.0,33.0,32.0,61.0,No,35.0,No,UA,No,,74.0,83.0,Mild,1.06,212.0,18.0,Absent,170.0,100.0,130.0,30.0,No HF
+MPI371,46.0,Male,25.71,I,82.0,Yes,Yes,Yes,Yes,9.8,1.5,11.5,Normal,Normal,49.0,25.0,36.0,50.0,Yes,46.0,Yes,NSTEMI,Subendocardial,,106.0,101.0,Mild,1.11,170.0,20.0,Absent,135.0,97.0,120.0,25.0,No HF
+MPI281,62.0,Male,19.1,IV,82.0,Yes,No,Yes,Yes,6.1,1.2,2.8,Cardiomegaly,AMI,49.0,18.0,41.0,37.0,Yes,28.0,Yes,STEMI,Anterior,PPCI,71.0,82.0,Mild,0.96,186.0,18.0,Present,222.0,142.0,216.0,15.0,HF
+MPI276,55.0,Male,25.4,III,84.0,Yes,Yes,Yes,No,11.1,1.24,13.25,Cardiomegaly,AMI,45.0,27.0,33.0,49.0,Yes,38.0,Yes,STEMI,Infero+Posterior,STK/TNK,95.0,97.0,Moderate,0.31,160.0,18.0,Present,136.0,62.0,125.0,13.0,HF
+MPI164,60.0,Female,22.23,II,74.0,Yes,Yes,Yes,Yes,9.1,1.2,7.5,Normal,ST_Depression,45.0,26.0,29.0,52.0,Yes,32.0,Yes,NSTEMI,Subendocardial,,89.0,99.0,Mild,1.29,188.0,19.0,Present,144.0,77.0,142.0,65.0,HF
+MPI392,54.0,Male,23.51,II,96.0,No,Yes,Yes,Yes,9.6,1.14,0.0001,Cardiomegaly,T_inversion,58.0,12.0,51.0,25.0,Yes,34.0,No,UA,No,,97.0,69.0,Nil,2.3,148.0,19.0,Present,128.0,70.0,87.0,20.0,HF
+MPI338,61.0,Female,48.89,II,76.0,Yes,No,No,No,6.1,1.0,0.001,Normal,Normal,44.0,35.0,28.0,65.0,No,52.0,No,UA,No,,97.0,97.0,Mild,0.81,123.0,20.0,Present,156.0,75.0,110.0,20.0,HF
+MPI241,73.0,Male,22.49,IV,82.0,No,No,No,No,7.1,1.11,0.001,Normal,Normal,51.0,36.0,33.0,65.0,No,52.0,No,UA,No,,111.0,125.0,Mild,0.99,225.0,20.0,Present,238.0,178.0,152.0,30.0,HF
+MPI069,27.0,Female,24.09,I,70.0,No,No,No,No,6.5,0.78,0.001,Normal,Normal,37.0,27.0,23.0,68.0,No,31.0,No,UA,No,,106.0,74.0,Nil,2.89,171.0,19.0,Absent,167.0,89.0,100.0,10.0,No HF
+MPI031,32.0,Male,25.61,II,84.0,No,No,Yes,No,5.2,1.01,8.1,Normal,Normal,50.0,29.0,35.0,50.0,Yes,28.0,Yes,NSTEMI,Subendocardial,,55.0,74.0,Mild,1.35,110.0,22.0,Present,165.0,70.0,110.0,50.0,No HF
+MPI269,52.0,Male,21.45,III,74.0,Yes,No,No,No,6.5,0.85,0.0,Normal,AMI,55.0,22.0,42.0,45.0,Yes,38.0,Yes,STEMI,Antero-Lateral,STK/TNK,98.0,105.0,Mild,0.77,176.0,28.0,Present,169.0,132.0,304.0,30.0,HF
+MPI259,40.0,Male,23.23,III,84.0,Yes,No,No,Yes,5.5,1.34,27.0,Cardiomegaly,AMI,43.0,25.0,32.0,51.0,Yes,18.0,Yes,STEMI,Inferior,PPCI,81.0,83.0,Mild,1.01,93.0,16.0,Present,301.0,190.0,483.0,15.0,HF
+MPI271,35.0,Male,20.82,II,74.0,No,No,Yes,Yes,5.3,0.99,22.77,Normal,AMI,40.0,28.0,28.0,50.0,Yes,41.0,Yes,STEMI,Lateral,PPCI,78.0,81.0,Nil,0.82,198.0,24.0,Present,228.0,125.0,347.0,20.0,No HF
+MPI049,61.0,Male,29.3,I,75.0,Yes,No,No,Yes,5.6,0.81,0.001,Normal,Normal,44.0,32.0,30.0,60.0,No,28.0,No,UA,No,,60.0,78.0,Mild,0.76,165.0,22.0,Absent,150.0,140.0,150.0,10.0,No HF
+MPI006,60.0,Male,21.45,II,62.0,No,Yes,Yes,No,17.4,1.71,7.5,Cardiomegaly,T_inversion,63.0,14.0,54.0,25.0,Yes,46.0,Yes,STEMI,Anterior,PPCI,106.0,125.0,Mild,1.0,169.0,24.0,Present,157.0,95.0,130.0,30.0,HF
+MPI319,51.0,Male,25.26,I,60.0,No,No,Yes,No,4.8,1.19,0.003,Normal,Normal,47.0,33.0,31.0,60.0,No,44.0,No,UA,No,,96.0,133.0,Nil,0.95,155.0,20.0,Absent,170.0,135.0,210.0,20.0,No HF
+MPI175,60.0,Female,23.32,I,84.0,Yes,Yes,No,Yes,9.5,1.0,35.9,Normal,Normal,43.0,26.0,29.0,50.0,Yes,51.0,Yes,NSTEMI,Subendocardial,,72.0,82.0,Mild,1.22,146.0,20.0,Absent,187.0,134.0,100.0,5.0,HF
+MPI264,50.0,Male,20.32,III,78.0,Yes,No,Yes,Yes,5.4,1.3,32.7,Normal,AMI,57.0,23.0,43.0,46.0,Yes,28.0,Yes,STEMI,Infero+Posterior,PPCI,102.0,104.0,Mild,0.82,167.0,23.0,Present,236.0,137.0,266.0,10.0,HF
+MPI178,55.0,Female,28.13,II,76.0,No,Yes,No,Yes,10.5,1.0,3.5,Normal,T_inversion,52.0,24.0,35.0,50.0,Yes,45.0,Yes,NSTEMI,Subendocardial,,102.0,112.0,Mild,1.03,161.0,21.0,Present,158.0,80.0,140.0,5.0,HF
+MPI484,82.0,Male,25.1,III,102.0,Yes,Yes,No,Yes,18.5,1.91,54.2,Normal,ST_Depression,50.0,22.0,39.0,45.0,Yes,41.0,Yes,NSTEMI,Subendocardial,,89.0,126.0,Nil,0.66,124.0,18.0,Present,167.0,73.0,559.0,28.0,HF
+MPI068,51.0,Male,22.04,I,64.0,Yes,No,No,No,6.3,1.24,21.0,Normal,Others,45.0,20.0,36.0,41.0,Yes,29.0,Yes,STEMI,Anterior,PPCI,88.0,106.0,Nil,0.52,167.0,18.0,Absent,210.0,150.0,165.0,25.0,HF
+MPI209,49.0,Male,25.28,II,72.0,Yes,No,Yes,No,9.8,1.2,9.5,Normal,T_inversion,42.0,25.0,30.0,50.0,Yes,23.0,Yes,NSTEMI,Subendocardial,,95.0,105.0,Mild,0.91,90.0,20.0,Present,175.0,125.0,136.0,811.0,HF
+MPI440,69.0,Female,24.44,III,66.0,Yes,No,No,Yes,4.7,0.87,7.0,Normal,Others,51.0,19.0,41.0,40.0,Yes,35.0,Yes,NSTEMI,Subendocardial,,81.0,96.0,Mild,1.63,151.0,12.0,Present,90.0,56.0,85.0,15.0,HF
+MPI406,46.0,Male,27.48,II,80.0,Yes,No,No,Yes,7.2,1.12,64.4,Normal,Others,50.0,25.0,34.0,50.0,Yes,38.0,Yes,STEMI,Inferior,PPCI,84.0,104.0,Mild,1.0,165.0,22.0,Present,217.0,159.0,194.0,20.0,No HF
+MPI313,48.0,Male,24.8,I,74.0,Yes,No,Yes,Yes,6.0,0.9,0.003,Normal,Normal,46.0,32.0,31.0,60.0,No,32.0,No,UA,No,,83.0,83.0,Mild,0.88,97.0,19.0,Absent,220.0,150.0,195.0,20.0,No HF
+MPI422,47.0,Male,22.58,II,66.0,No,Yes,No,Yes,12.7,0.88,0.19,Normal,Normal,43.0,36.0,27.0,65.0,No,21.0,No,UA,No,,81.0,89.0,Mild,1.66,178.0,18.0,Present,199.0,112.0,261.0,15.0,No HF
+MPI473,68.0,Male,20.06,II,60.0,Yes,No,No,No,8.8,1.2,0.001,Normal,Others,47.0,25.0,35.0,50.0,Yes,27.0,No,UA,No,,88.0,92.0,Nil,1.33,152.0,20.0,Present,105.0,75.0,87.0,10.0,No HF
+MPI124,40.0,Male,27.06,II,58.0,No,No,No,No,7.0,1.1,39.6,Normal,ST_Depression,51.0,26.0,38.0,52.0,Yes,28.0,Yes,NSTEMI,Subendocardial,,81.0,105.0,Mild,0.82,186.0,28.0,Present,150.0,91.0,130.0,20.0,HF
+MPI237,82.0,Male,23.62,II,72.0,Yes,Yes,No,Yes,9.5,1.4,16.3,Cardiomegaly,T_inversion,54.0,25.0,38.0,50.0,Yes,45.0,Yes,NSTEMI,Subendocardial,,91.0,101.0,Mild,1.05,162.0,17.0,Present,100.0,56.0,74.0,293.0,HF
+MPI152,68.0,Male,19.82,I,74.0,No,No,Yes,No,5.7,1.05,35.5,Normal,Normal,44.0,26.0,31.0,41.0,Yes,42.0,Yes,NSTEMI,Subendocardial,,87.0,98.0,Mild,0.97,147.0,22.0,Absent,164.0,100.0,176.0,13.0,No HF
+MPI368,47.0,Male,26.03,II,62.0,No,No,No,Yes,5.6,0.81,21.1,Cardiomegaly,Others,55.0,26.0,41.0,50.0,Yes,40.0,Yes,STEMI,Inferior,STK/TNK,101.0,138.0,Nil,1.3,158.0,18.0,Present,136.0,90.0,469.0,15.0,No HF
+MPI021,42.0,Female,25.81,I,72.0,Yes,Yes,No,Yes,9.5,1.42,0.002,Normal,Normal,39.0,36.0,25.0,66.0,No,26.0,No,UA,No,,69.0,69.0,Mild,0.88,186.0,16.0,Absent,145.0,85.0,90.0,15.0,No HF
+MPI118,75.0,Female,27.41,II,58.0,Yes,No,No,Yes,5.2,3.7,14.2,Normal,Normal,40.0,26.0,29.0,53.0,Yes,34.0,Yes,NSTEMI,Subendocardial,,101.0,131.0,Mild,0.81,151.0,17.0,Present,126.0,62.0,160.0,20.0,HF
+MPI442,42.0,Male,25.25,II,74.0,No,No,No,Yes,6.0,1.02,21.2,Normal,ST_Depression,50.0,32.0,34.0,60.0,No,27.0,Yes,NSTEMI,Subendocardial,,104.0,89.0,Mild,1.12,170.0,20.0,Present,154.0,102.0,285.0,20.0,No HF
+MPI362,28.0,Female,22.22,I,104.0,No,No,No,No,5.8,1.02,0.002,Normal,T_inversion,40.0,31.0,27.0,60.0,No,39.0,No,UA,No,,83.0,78.0,Mild,1.61,122.0,19.0,Absent,150.0,140.0,150.0,10.0,No HF
+MPI202,57.0,Male,26.04,III,96.0,Yes,Yes,No,Yes,7.8,1.3,6.5,Cardiomegaly,ST_Depression,54.0,25.0,34.0,50.0,Yes,40.0,Yes,NSTEMI,Subendocardial,,74.0,84.0,Mild,1.0,171.0,22.0,Present,123.0,69.0,202.0,523.0,HF
+MPI286,48.0,Male,27.97,II,68.0,Yes,No,Yes,Yes,6.1,1.31,0.0,Normal,AMI,50.0,28.0,35.0,45.0,Yes,19.0,Yes,STEMI,Infero+Posterior,PPCI,82.0,86.0,Mild,1.1,156.0,26.0,Present,191.0,88.0,382.0,25.0,No HF
+MPI142,48.0,Male,26.03,I,56.0,No,Yes,No,Yes,10.5,0.9,28.5,Normal,Normal,45.0,30.0,30.0,50.0,Yes,55.0,Yes,NSTEMI,Subendocardial,,105.0,100.0,Mild,0.95,178.0,20.0,Absent,174.0,84.0,285.0,18.0,No HF
+MPI128,45.0,Female,20.24,III,120.0,Yes,Yes,No,Yes,9.1,0.86,17.7,Cardiomegaly,T_inversion,69.0,18.0,57.0,36.0,Yes,36.0,Yes,NSTEMI,Subendocardial,,82.0,125.0,Mild,1.22,90.0,24.0,Present,163.0,82.0,170.0,15.0,HF
+MPI182,55.0,Female,22.77,III,82.0,Yes,Yes,No,Yes,5.4,0.8,2.2,Normal,Others,44.0,22.0,27.0,45.0,Yes,37.0,Yes,NSTEMI,Subendocardial,,83.0,93.0,Mild,1.04,135.0,24.0,Present,201.0,141.0,135.0,22.0,HF
+MPI385,65.0,Male,24.34,II,110.0,Yes,No,No,Yes,9.3,1.54,2.9,Cardiomegaly,AMI,54.0,18.0,44.0,35.0,Yes,41.0,Yes,STEMI,Anterior,PPCI,67.0,96.0,Nil,0.65,79.0,18.0,Present,252.0,169.0,219.0,25.0,HF
+MPI500,65.0,Female,21.64,IV,90.0,Yes,No,No,No,8.7,5.35,50.0,Normal,AMI,51.0,15.0,40.0,30.0,Yes,25.0,No,STEMI,Anterior,STK/TNK,81.0,88.0,Nil,0.6,115.0,28.0,Present,110.0,90.0,80.0,25.0,HF
+MPI369,48.0,Male,21.48,II,72.0,No,Yes,Yes,Yes,7.2,1.17,1.09,Normal,AMI,48.0,20.0,39.0,40.0,Yes,42.0,Yes,STEMI,Infero+Posterior,PPCI,89.0,104.0,Mild,1.18,168.0,19.0,Present,128.0,70.0,87.0,20.0,No HF
+MPI255,45.0,Male,22.38,I,84.0,Yes,Yes,Yes,No,15.1,0.88,13.31,Cardiomegaly,AMI,45.0,30.0,31.0,50.0,Yes,23.0,Yes,STEMI,Lateral,STK/TNK,96.0,94.0,Nil,0.81,135.0,21.0,Absent,189.0,138.0,106.0,30.0,No HF
+MPI186,46.0,Male,20.76,I,82.0,No,No,No,No,7.2,1.1,4.5,Cardiomegaly,Others,62.0,24.0,47.0,48.0,Yes,30.0,Yes,NSTEMI,Subendocardial,,71.0,81.0,Mild,1.25,147.0,17.0,Absent,210.0,140.0,159.0,5.0,HF
+MPI433,57.0,Male,24.22,II,84.0,Yes,Yes,No,Yes,9.9,1.08,27.44,Normal,AMI,34.0,25.0,26.0,50.0,Yes,18.0,Yes,STEMI,Inferior,STK/TNK,67.0,74.0,Mild,0.7,210.0,11.0,Present,175.0,118.0,120.0,15.0,No HF
+MPI469,52.0,Male,23.03,II,101.0,Yes,Yes,Yes,No,8.7,1.31,40.4,Normal,AMI,46.0,23.0,35.0,45.0,Yes,28.0,Yes,STEMI,Infero+Posterior,PPCI,74.0,81.0,Mild,0.79,183.0,29.0,Present,187.0,135.0,159.0,15.0,No HF
+MPI161,50.0,Male,22.04,III,116.0,Yes,No,No,No,8.0,0.95,15.1,Normal,Others,50.0,16.0,42.0,31.0,Yes,26.0,Yes,NSTEMI,Subendocardial,,118.0,120.0,Mild,0.99,158.0,22.0,Present,276.0,126.0,577.0,29.0,HF
+MPI189,65.0,Male,24.49,I,88.0,Yes,Yes,No,Yes,16.7,0.9,1.5,Normal,Normal,42.0,31.0,28.0,42.0,Yes,24.0,Yes,NSTEMI,Subendocardial,,101.0,111.0,Nil,1.26,162.0,17.0,Absent,131.0,83.0,150.0,924.0,No HF
+MPI364,39.0,Male,26.84,III,92.0,No,No,No,Yes,6.3,1.24,8.07,Cardiomegaly,Others,49.0,20.0,39.0,40.0,Yes,32.0,Yes,NSTEMI,Subendocardial,PPCI,74.0,133.0,Mild,0.74,143.0,22.0,Present,170.0,95.0,140.0,20.0,No HF
+MPI056,70.0,Female,23.78,I,76.0,Yes,Yes,No,Yes,8.5,1.1,10.5,Normal,ST_Depression,51.0,22.0,40.0,40.0,Yes,24.0,Yes,STEMI,Anterior,PPCI,118.0,126.0,Mild,0.62,288.0,26.0,Absent,210.0,160.0,250.0,20.0,HF

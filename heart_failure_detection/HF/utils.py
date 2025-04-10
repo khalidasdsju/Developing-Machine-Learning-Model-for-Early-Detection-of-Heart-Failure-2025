@@ -2,6 +2,7 @@ import os
 import sys
 import dill
 import yaml
+import numpy as np
 import pandas as pd
 from HF.exception import HFException
 from HF.logger import logging
@@ -52,4 +53,28 @@ def load_object(file_path: str):
             return dill.load(file_obj)
     except Exception as e:
         logging.error(f"Error loading object from: {file_path}")
+        raise HFException(e, sys)
+
+def save_numpy_array_data(file_path: str, array: np.ndarray):
+    """
+    Saves a numpy array to a file.
+    """
+    try:
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, "wb") as file_obj:
+            np.save(file_obj, array)
+        logging.info(f"Successfully saved numpy array to: {file_path}")
+    except Exception as e:
+        logging.error(f"Error saving numpy array to: {file_path}")
+        raise HFException(e, sys)
+
+def load_numpy_array_data(file_path: str) -> np.ndarray:
+    """
+    Loads a numpy array from a file.
+    """
+    try:
+        with open(file_path, "rb") as file_obj:
+            return np.load(file_obj, allow_pickle=True)
+    except Exception as e:
+        logging.error(f"Error loading numpy array from: {file_path}")
         raise HFException(e, sys)

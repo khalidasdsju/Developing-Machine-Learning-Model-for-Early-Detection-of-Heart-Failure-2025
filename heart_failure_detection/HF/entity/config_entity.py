@@ -107,12 +107,18 @@ class DataTransformationConfig:
         self.transformed_train_file_path = os.path.join(
             self.transformed_train_dir, "transformed_train.csv"
         )
+        self.transformed_train_array_file_path = os.path.join(
+            self.transformed_train_dir, "transformed_train.npz"
+        )
 
         self.transformed_test_dir = transformed_test_dir or os.path.join(
             artifact_dir, "data_transformation", "transformed", "test"
         )
         self.transformed_test_file_path = os.path.join(
             self.transformed_test_dir, "transformed_test.csv"
+        )
+        self.transformed_test_array_file_path = os.path.join(
+            self.transformed_test_dir, "transformed_test.npz"
         )
 
         # Preprocessing directory and file path
@@ -122,9 +128,33 @@ class DataTransformationConfig:
         self.preprocessed_object_file_path = preprocessed_object_file_path or os.path.join(
             self.preprocessing_dir, "preprocessed.pkl"
         )
+        self.transformed_object_file_path = os.path.join(
+            self.preprocessing_dir, "transformer.pkl"
+        )
 
         # Columns to drop
-        self.columns_to_drop = ["StudyID"]
+        self.drop_columns = ["StudyID"]
+
+        # Feature categories
+        self.num_features = [
+            "Age", "BMI", "HR", "RBS", "HbA1C", "Creatinine", "Na", "K", "Cl", "Hb",
+            "TropI", "LVIDd", "FS", "LVIDs", "LVEF", "LAV", "ICT", "IRT", "EA", "DT",
+            "MPI", "RR", "TC", "LDLc", "HDLc", "TG", "BNP"
+        ]
+
+        self.or_columns = [
+            "Sex", "NYHA", "HTN", "DM", "Smoker", "DL", "BA", "CXR", "RWMA", "MI", "Chest_pain"
+        ]
+
+        self.oh_columns = [
+            "ECG", "ACS", "Wall", "MR", "Thrombolysis"
+        ]
+
+        # Target column
+        self.target_column = "HF"
+
+        # Available columns (will be set dynamically during transformation)
+        self.available_columns = []
 
 
 @dataclass
@@ -159,3 +189,34 @@ class DataProfilingConfig:
         self.full_profile_report_file_path = full_profile_report_file_path or os.path.join(
             self.profile_report_dir, "full_profile_report.html"
         )
+
+
+@dataclass
+class ModelTrainerConfig:
+    """
+    Configuration for model training
+    """
+    def __init__(self,
+                 trained_model_dir: str = None,
+                 trained_model_file_path: str = None,
+                 model_config_file_path: str = None):
+
+        # Set default paths if not provided
+        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        artifact_dir = os.path.join("artifacts", timestamp)
+
+        # Trained model directory and file path
+        self.trained_model_dir = trained_model_dir or os.path.join(
+            artifact_dir, "model_trainer"
+        )
+        self.trained_model_file_path = trained_model_file_path or os.path.join(
+            self.trained_model_dir, "model.pkl"
+        )
+
+        # Model config file path
+        self.model_config_file_path = model_config_file_path or os.path.join(
+            "config", "model.yaml"
+        )
+
+        # Model parameters
+        self.base_accuracy = 0.3
