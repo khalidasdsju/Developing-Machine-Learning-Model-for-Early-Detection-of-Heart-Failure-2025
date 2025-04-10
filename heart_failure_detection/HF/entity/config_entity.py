@@ -55,37 +55,6 @@ class DataIngestionConfig:
 
 
 @dataclass
-class DataValidationConfig:
-    """
-    Configuration for data validation
-    """
-    def __init__(self,
-                 schema_file_path: str = None,
-                 report_file_path: str = None,
-                 drift_report_file_path: str = None):
-
-        # Set default paths if not provided
-        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        artifact_dir = os.path.join("artifacts", timestamp)
-
-        # Schema file path
-        self.schema_file_path = schema_file_path or os.path.join(
-            "config", "schema.yaml"
-        )
-
-        # Report directory and file paths
-        report_dir = os.path.join(artifact_dir, "data_validation")
-
-        self.report_file_path = report_file_path or os.path.join(
-            report_dir, "report.json"
-        )
-
-        self.drift_report_file_path = drift_report_file_path or os.path.join(
-            report_dir, "drift_report.json"
-        )
-
-
-@dataclass
 class DataTransformationConfig:
     """
     Configuration for data transformation
