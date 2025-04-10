@@ -5,157 +5,48 @@ from datetime import datetime
 
 @dataclass
 class DataIngestionConfig:
-    """
-    Configuration for data ingestion
-    """
-    def __init__(self,
-                 dataset_download_url: str = None,
-                 raw_data_dir: str = None,
-                 feature_store_dir: str = None,
-                 ingested_train_dir: str = None,
-                 ingested_test_dir: str = None,
-                 train_test_split_ratio: float = 0.2):
-
-        # Set default paths if not provided
-        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        artifact_dir = os.path.join("artifacts", timestamp)
-
-        self.dataset_download_url = dataset_download_url
-
-        # Raw data directory
-        self.raw_data_dir = raw_data_dir or os.path.join(
-            artifact_dir, "data_ingestion", "raw_data"
-        )
-
-        # Feature store directory and file path
-        self.feature_store_dir = feature_store_dir or os.path.join(
-            artifact_dir, "data_ingestion", "feature_store"
-        )
-        self.feature_store_file_path = os.path.join(
-            self.feature_store_dir, "heart_failure_data.csv"
-        )
-
-        # Train and test directories and file paths
-        self.ingested_train_dir = ingested_train_dir or os.path.join(
-            artifact_dir, "data_ingestion", "dataset"
-        )
-        self.training_file_path = os.path.join(
-            self.ingested_train_dir, "train.csv"
-        )
-
-        self.ingested_test_dir = ingested_test_dir or os.path.join(
-            artifact_dir, "data_ingestion", "dataset"
-        )
-        self.testing_file_path = os.path.join(
-            self.ingested_test_dir, "test.csv"
-        )
-
-        # Train-test split ratio
-        self.train_test_split_ratio = train_test_split_ratio
-
-
-@dataclass
-class DataValidationConfig:
-    """
-    Configuration for data validation
-    """
-    def __init__(self,
-                 schema_file_path: str = None,
-                 report_file_path: str = None,
-                 drift_report_file_path: str = None):
-
-        # Set default paths if not provided
-        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        artifact_dir = os.path.join("artifacts", timestamp)
-
-        # Schema file path
-        self.schema_file_path = schema_file_path or os.path.join(
-            "config", "schema.yaml"
-        )
-
-        # Report directory and file paths
-        report_dir = os.path.join(artifact_dir, "data_validation")
-
-        self.report_file_path = report_file_path or os.path.join(
-            report_dir, "report.json"
-        )
-
-        self.drift_report_file_path = drift_report_file_path or os.path.join(
-            report_dir, "drift_report.json"
-        )
-
+    def __init__(self):
+        self.ingestion_dir: str = os.path.join("artifacts", datetime.now().strftime("%Y-%m-%d_%H-%M-%S"), "data_ingestion")
+        self.feature_store_file_path: str = os.path.join(self.ingestion_dir, "feature_store", "heart_failure_data.csv")
+        self.train_file_path: str = os.path.join(self.ingestion_dir, "dataset", "train.csv")
+        self.test_file_path: str = os.path.join(self.ingestion_dir, "dataset", "test.csv")
+        self.test_size: float = 0.2
 
 @dataclass
 class DataTransformationConfig:
-    """
-    Configuration for data transformation
-    """
-    def __init__(self,
-                 transformed_train_dir: str = None,
-                 transformed_test_dir: str = None,
-                 preprocessing_dir: str = None,
-                 preprocessed_object_file_path: str = None):
-
-        # Set default paths if not provided
-        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        artifact_dir = os.path.join("artifacts", timestamp)
-
-        # Transformed data directories and file paths
-        self.transformed_train_dir = transformed_train_dir or os.path.join(
-            artifact_dir, "data_transformation", "transformed", "train"
-        )
-        self.transformed_train_file_path = os.path.join(
-            self.transformed_train_dir, "transformed_train.csv"
-        )
-
-        self.transformed_test_dir = transformed_test_dir or os.path.join(
-            artifact_dir, "data_transformation", "transformed", "test"
-        )
-        self.transformed_test_file_path = os.path.join(
-            self.transformed_test_dir, "transformed_test.csv"
-        )
-
-        # Preprocessing directory and file path
-        self.preprocessing_dir = preprocessing_dir or os.path.join(
-            artifact_dir, "data_transformation", "preprocessed"
-        )
-        self.preprocessed_object_file_path = preprocessed_object_file_path or os.path.join(
-            self.preprocessing_dir, "preprocessed.pkl"
-        )
-
-        # Columns to drop
-        self.columns_to_drop = ["StudyID"]
-
+    def __init__(self):
+        self.data_ingestion_dir: str = os.path.join("artifacts", datetime.now().strftime("%Y-%m-%d_%H-%M-%S"), "data_ingestion")
+        self.data_transformation_dir: str = os.path.join("artifacts", datetime.now().strftime("%Y-%m-%d_%H-%M-%S"), "data_transformation")
+        self.feature_engineering_object_file_path: str = os.path.join(self.data_transformation_dir, "preprocessed", "preprocessed.pkl")
+        self.transformed_train_file_path: str = os.path.join(self.data_transformation_dir, "transformed", "train", "transformed_train.csv")
+        self.transformed_test_file_path: str = os.path.join(self.data_transformation_dir, "transformed", "test", "transformed_test.csv")
+        self.transformed_train_array_file_path: str = os.path.join(self.data_transformation_dir, "transformed", "train", "transformed_train.npz")
+        self.transformed_test_array_file_path: str = os.path.join(self.data_transformation_dir, "transformed", "test", "transformed_test.npz")
+        self.analysis_dir: str = os.path.join(self.data_transformation_dir, "transformed", "train", "analysis")
 
 @dataclass
-class DataProfilingConfig:
-    """
-    Configuration for data profiling
-    """
-    def __init__(self,
-                 profile_report_dir: str = None,
-                 train_profile_report_file_path: str = None,
-                 test_profile_report_file_path: str = None,
-                 full_profile_report_file_path: str = None):
+class ModelTrainerConfig:
+    def __init__(self):
+        self.data_transformation_dir: str = os.path.join("artifacts", datetime.now().strftime("%Y-%m-%d_%H-%M-%S"), "data_transformation")
+        self.model_trainer_dir: str = os.path.join("artifacts", datetime.now().strftime("%Y-%m-%d_%H-%M-%S"), "model_trainer")
+        self.model_file_path: str = os.path.join(self.model_trainer_dir, "model.pkl")
+        self.expected_accuracy: float = 0.7
+        self.seed: int = 42
+        self.model_comparison_dir: str = os.path.join(self.model_trainer_dir, "model_comparison")
 
-        # Set default paths if not provided
-        timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-        artifact_dir = os.path.join("artifacts", timestamp)
+@dataclass
+class ModelEvaluationConfig:
+    def __init__(self):
+        self.model_evaluation_dir: str = os.path.join("artifacts", "model_evaluation")
+        self.model_comparison_dir: str = os.path.join("artifacts", "model_comparison")
+        self.feature_importance_dir: str = os.path.join("artifacts", "feature_importance")
+        self.threshold: float = 0.7
 
-        # Profile report directory
-        self.profile_report_dir = profile_report_dir or os.path.join(
-            artifact_dir, "data_profiling"
-        )
-
-        # Profile report file paths
-        self.train_profile_report_file_path = train_profile_report_file_path or os.path.join(
-            self.profile_report_dir, "train_profile_report.html"
-        )
-
-        self.test_profile_report_file_path = test_profile_report_file_path or os.path.join(
-            self.profile_report_dir, "test_profile_report.html"
-        )
-
-        self.full_profile_report_file_path = full_profile_report_file_path or os.path.join(
-            self.profile_report_dir, "full_profile_report.html"
-        )
+@dataclass
+class ModelPusherConfig:
+    def __init__(self):
+        self.model_pusher_dir: str = os.path.join("artifacts", datetime.now().strftime("%Y-%m-%d_%H-%M-%S"), "model_pusher")
+        self.saved_model_dir: str = os.path.join("saved_models")
+        self.pusher_model_dir: str = os.path.join(self.model_pusher_dir, "saved_models")
+        self.pusher_model_path: str = os.path.join(self.pusher_model_dir, "model.pkl")
+        self.pusher_transformer_path: str = os.path.join(self.pusher_model_dir, "transformer.pkl")
