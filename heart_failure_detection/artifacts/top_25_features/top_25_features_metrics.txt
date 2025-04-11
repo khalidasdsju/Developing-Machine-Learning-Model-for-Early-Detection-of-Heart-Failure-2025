@@ -1,0 +1,35 @@
+TOP 25 FEATURES MODEL PERFORMANCE
+================================
+
+Accuracy: 0.8500
+Precision: 0.8298
+Recall: 0.9070
+F1 Score: 0.8667
+ROC AUC: 0.9089
+
+TOP 25 FEATURES:
+1. DT
+2. FS
+3. EA
+4. BMI
+5. LAV
+6. HR
+7. IRT
+8. LDLc
+9. TG
+10. BNP
+11. Creatinine
+12. Age
+13. LVIDs
+14. MPI
+15. TropI
+16. TC
+17. Hb
+18. RBS
+19. Chest_pain_Present
+20. ICT
+21. LVEF
+22. HDLc
+23. LVIDd
+24. Wall_Subendocardial
+25. RR

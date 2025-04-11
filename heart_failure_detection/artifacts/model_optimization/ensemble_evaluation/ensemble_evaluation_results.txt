@@ -1,0 +1,149 @@
+HEART FAILURE DETECTION - ENSEMBLE MODEL EVALUATION
+================================================================================
+
+SUMMARY OF RESULTS
+--------------------------------------------------------------------------------
+
+Best Model: Extra Trees
+Accuracy: 0.8750
+Precision: 0.8755
+Recall: 0.8750
+F1 Score: 0.8747
+ROC AUC: 0.9547
+
+MODEL COMPARISON
+--------------------------------------------------------------------------------
+
+Extra Trees:
+  Accuracy: 0.8750
+  Precision: 0.8755
+  Recall: 0.8750
+  F1 Score: 0.8747
+  ROC AUC: 0.9547
+
+LightGBM:
+  Accuracy: 0.8625
+  Precision: 0.8638
+  Recall: 0.8625
+  F1 Score: 0.8619
+  ROC AUC: 0.9082
+
+Gradient Boosting:
+  Accuracy: 0.8625
+  Precision: 0.8724
+  Recall: 0.8625
+  F1 Score: 0.8605
+  ROC AUC: 0.9139
+
+Voting (Hard):
+  Accuracy: 0.8625
+  Precision: 0.8724
+  Recall: 0.8625
+  F1 Score: 0.8605
+
+XGBoost:
+  Accuracy: 0.8500
+  Precision: 0.8565
+  Recall: 0.8500
+  F1 Score: 0.8483
+  ROC AUC: 0.9026
+
+Voting (Soft):
+  Accuracy: 0.8500
+  Precision: 0.8565
+  Recall: 0.8500
+  F1 Score: 0.8483
+  ROC AUC: 0.9340
+
+Random Forest:
+  Accuracy: 0.8250
+  Precision: 0.8306
+  Recall: 0.8250
+  F1 Score: 0.8230
+  ROC AUC: 0.9271
+
+Stacking (LR):
+  Accuracy: 0.8125
+  Precision: 0.8132
+  Recall: 0.8125
+  F1 Score: 0.8117
+  ROC AUC: 0.9390
+
+Stacking (RF):
+  Accuracy: 0.7875
+  Precision: 0.7879
+  Recall: 0.7875
+  F1 Score: 0.7866
+  ROC AUC: 0.8878
+
+CROSS-VALIDATION RESULTS
+--------------------------------------------------------------------------------
+
+Extra Trees:
+  Accuracy: 0.8600 ± 0.0550
+  Precision: 0.8650 ± 0.0547
+  Recall: 0.8600 ± 0.0550
+  F1 Score: 0.8591 ± 0.0557
+  ROC AUC: 0.9325 ± 0.0346
+
+LightGBM:
+  Accuracy: 0.8700 ± 0.0444
+  Precision: 0.8742 ± 0.0414
+  Recall: 0.8700 ± 0.0444
+  F1 Score: 0.8691 ± 0.0454
+  ROC AUC: 0.9318 ± 0.0255
+
+Gradient Boosting:
+  Accuracy: 0.8575 ± 0.0404
+  Precision: 0.8654 ± 0.0360
+  Recall: 0.8575 ± 0.0404
+  F1 Score: 0.8554 ± 0.0428
+  ROC AUC: 0.9290 ± 0.0256
+
+Voting (Hard):
+  Accuracy: 0.8625 ± 0.0503
+  Precision: 0.8681 ± 0.0485
+  Recall: 0.8625 ± 0.0503
+  F1 Score: 0.8611 ± 0.0516
+
+XGBoost:
+  Accuracy: 0.8625 ± 0.0375
+  Precision: 0.8690 ± 0.0392
+  Recall: 0.8625 ± 0.0375
+  F1 Score: 0.8613 ± 0.0377
+  ROC AUC: 0.9363 ± 0.0254
+
+Voting (Soft):
+  Accuracy: 0.8575 ± 0.0488
+  Precision: 0.8634 ± 0.0475
+  Recall: 0.8575 ± 0.0488
+  F1 Score: 0.8560 ± 0.0500
+  ROC AUC: 0.9418 ± 0.0226
+
+Random Forest:
+  Accuracy: 0.8525 ± 0.0506
+  Precision: 0.8597 ± 0.0494
+  Recall: 0.8525 ± 0.0506
+  F1 Score: 0.8507 ± 0.0521
+  ROC AUC: 0.9322 ± 0.0291
+
+Stacking (LR):
+  Accuracy: 0.8550 ± 0.0458
+  Precision: 0.8610 ± 0.0445
+  Recall: 0.8550 ± 0.0458
+  F1 Score: 0.8537 ± 0.0469
+  ROC AUC: 0.9396 ± 0.0235
+
+Stacking (RF):
+  Accuracy: 0.8475 ± 0.0378
+  Precision: 0.8520 ± 0.0395
+  Recall: 0.8475 ± 0.0378
+  F1 Score: 0.8466 ± 0.0378
+  ROC AUC: 0.9199 ± 0.0276
+
+CONCLUSION
+--------------------------------------------------------------------------------
+
+The Extra Trees model achieved the highest accuracy of 0.8750 on the test set and 0.8600 ± 0.0550 in 10-fold cross-validation.
+
+This model is recommended for deployment in the heart failure detection system.

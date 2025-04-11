@@ -1,0 +1,2 @@
+boosting_type,num_leaves,max_depth,learning_rate,n_estimators,min_child_samples,subsample,colsample_bytree,reg_alpha,reg_lambda,min_split_gain
+dart,45,13,0.20877688906853645,431,16,0.7248601499640451,0.8317048891519834,1.8413701553749397e-08,0.0007154009278400164,2.1212034815716092e-07
