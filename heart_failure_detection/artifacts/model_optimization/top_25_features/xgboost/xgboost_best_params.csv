@@ -1,0 +1,2 @@
+booster,max_depth,learning_rate,n_estimators,min_child_weight,subsample,colsample_bytree,gamma,reg_alpha,reg_lambda,scale_pos_weight
+dart,12,0.15921532782117176,842,2,0.9828607813830922,0.7505788042180846,0.059924106250128624,0.0006212030750219415,7.892360658953316e-06,1.4419797496867173
