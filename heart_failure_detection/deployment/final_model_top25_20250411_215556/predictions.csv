@@ -1,0 +1,21 @@
+Prediction,Prediction_Label,Probability,Actual,Actual_Label
+1,Heart Failure,0.9050152101288392,1,Heart Failure
+1,Heart Failure,0.912668648979945,1,Heart Failure
+0,No Heart Failure,0.061556610326456276,0,No Heart Failure
+1,Heart Failure,0.9203209275827383,1,Heart Failure
+1,Heart Failure,0.9186321378334653,1,Heart Failure
+1,Heart Failure,0.9248198889545156,1,Heart Failure
+1,Heart Failure,0.9138507318277314,1,Heart Failure
+1,Heart Failure,0.8910055169885607,1,Heart Failure
+1,Heart Failure,0.9194416904160241,1,Heart Failure
+1,Heart Failure,0.9142102527222165,1,Heart Failure
+1,Heart Failure,0.9126124203127863,1,Heart Failure
+1,Heart Failure,0.8601608307297999,1,Heart Failure
+0,No Heart Failure,0.048975127959214264,0,No Heart Failure
+1,Heart Failure,0.8601608897691478,1,Heart Failure
+1,Heart Failure,0.9121234572864935,1,Heart Failure
+1,Heart Failure,0.9181626627785022,1,Heart Failure
+1,Heart Failure,0.8740142403137358,1,Heart Failure
+1,Heart Failure,0.9072281804197878,1,Heart Failure
+0,No Heart Failure,0.04989967904415952,0,No Heart Failure
+0,No Heart Failure,0.08298874869674937,0,No Heart Failure
